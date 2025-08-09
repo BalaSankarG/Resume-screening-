@@ -8,7 +8,7 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   const handleLogin = () => {
-    fetch('http://localhost:5000/api/login', {
+    fetch('https://resume-screeningbackend.onrender.com/api/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username, password }),
@@ -43,5 +43,6 @@ const LoginPage = () => {
     </div>
   );
 };
+
 
 export default LoginPage;
