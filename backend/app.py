@@ -5,7 +5,7 @@ import json
 from utils import create_docs, create_embeddings_load_data, find_similar_resumes, get_summary, send_email_notification
 
 app = Flask(__name__)
-CORS(app)
+CORS(app,origins=["https://resume-screening-bwm5.vercel.app"])
 
 UPLOAD_FOLDER = 'uploads'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
